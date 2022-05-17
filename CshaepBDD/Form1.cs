@@ -29,7 +29,7 @@ namespace CshaepBDD
         {
             Class1.Conectar();
             DataTable dt = new DataTable();
-            string consulta = "select * from Categories";
+            string consulta = "select * from Pacientes";
             SqlCommand cmd = new SqlCommand(consulta, Class1.Conectar());
 
             SqlDataAdapter da = new SqlDataAdapter(cmd);
@@ -40,11 +40,13 @@ namespace CshaepBDD
         private void button1_Click(object sender, EventArgs e)
         {
             Class1.Conectar();
-            string insertar = "Insert into Categories(CategoryName, Description) values(@Categoria, @Descripcion)";
+            string insertar = "Insert into Pacientes(CURP,Nombre,Apellidos,Telefono,FechaNacimiento) values(@Curp,@Nombre,@Apellidos,@Telefono,@FechaNacimiento)";
             SqlCommand cmdl = new SqlCommand(insertar, Class1.Conectar());
-            cmdl.Parameters.AddWithValue("@Categoria", textBox2.Text);
-            cmdl.Parameters.AddWithValue("@Descripcion", textBox3.Text);
-            //cmdl.Parameters.AddWithValue("@Imagen", textBox4.Text);
+            cmdl.Parameters.AddWithValue("@Curp", textBox1.Text);
+            cmdl.Parameters.AddWithValue("@Nombre", textBox2.Text);
+            cmdl.Parameters.AddWithValue("@Apellidos", textBox3.Text);
+            cmdl.Parameters.AddWithValue("@Telefono", textBox4.Text);
+            cmdl.Parameters.AddWithValue("@FechaNacimiento", textBox5.Text);
 
             cmdl.ExecuteNonQuery();
 
@@ -52,20 +54,6 @@ namespace CshaepBDD
             dataGridView1.DataSource = llenar_Grid();
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Class1.Conectar();
-            string insertar = "Insert into Categories(CategoryName, Description, Picture) values(@Categoria, @Descripcion, @Imagen)";
-            SqlCommand cmdl = new SqlCommand(insertar, Class1.Conectar());
-            cmdl.Parameters.AddWithValue("@Categoria", textBox2.Text);
-            cmdl.Parameters.AddWithValue("@Descripcion", textBox3.Text);
-            cmdl.Parameters.AddWithValue("@Imagen", textBox4.Text);
-
-            cmdl.ExecuteNonQuery();
-
-            MessageBox.Show("Los datos fueron agregados exitosamente");
-            dataGridView1.DataSource = llenar_Grid();
-        }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -80,20 +68,27 @@ namespace CshaepBDD
             {
 
             }
-        }
+        }    
 
-        private void button3_Click(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
-            Class1.Conectar();
-            string Eliminar = "DELETE FROM Categories WHERE CategoryID = @CategoriaID";
-            SqlCommand cmde = new SqlCommand(Eliminar, Class1.Conectar());
-            cmde.Parameters.AddWithValue("@CategoriaID", textBox1.Text);
 
-            cmde.ExecuteNonQuery();
-
-            MessageBox.Show("Los datos fueron eliminados exitosamente");
-            dataGridView1.DataSource = llenar_Grid();
         }
+        private void label2_Click(object sender, EventArgs e)
+        {
 
+        }
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
