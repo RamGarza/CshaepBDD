@@ -2,21 +2,21 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace CshaepBDD
 {
-    public partial class MenuPacientes : Form
+    public partial class MenuDoctores : Form
     {
-        public MenuPacientes()
+        public MenuDoctores()
         {
+            
             InitializeComponent();
-
             dataGridView1.DataSource = llenar_Grid();
         }
 
@@ -24,11 +24,12 @@ namespace CshaepBDD
         {
             Class1.Conectar();
         }
+
         public DataTable llenar_Grid()
         {
             Class1.Conectar();
             DataTable dt = new DataTable();
-            string consulta = "select * from Pacientes";
+            string consulta = "select * from Doctores";
             SqlCommand cmd = new SqlCommand(consulta, Class1.Conectar());
 
             SqlDataAdapter da = new SqlDataAdapter(cmd);
@@ -39,19 +40,18 @@ namespace CshaepBDD
         private void button1_Click(object sender, EventArgs e)
         {
             Class1.Conectar();
-            string insertar = "Insert into Pacientes(CURP,Nombre,Apellidos,Telefono,FechaNacimiento) values(@Curp,@Nombre,@Apellidos,@Telefono,@FechaNacimiento)";
+            string insertar = "Insert into Doctores(Empleado_Id,Cedula,Especialidad_id) values(@EmpleadoID,@Cedula,@EspecialidadID)";
             SqlCommand cmdl = new SqlCommand(insertar, Class1.Conectar());
-            cmdl.Parameters.AddWithValue("@Curp", textBox1.Text);
-            cmdl.Parameters.AddWithValue("@Nombre", textBox2.Text);
-            cmdl.Parameters.AddWithValue("@Apellidos", textBox3.Text);
-            cmdl.Parameters.AddWithValue("@Telefono", textBox4.Text);
-            cmdl.Parameters.AddWithValue("@FechaNacimiento", textBox5.Text);
+            cmdl.Parameters.AddWithValue("@EmpleadoID", textBox1.Text);
+            cmdl.Parameters.AddWithValue("@Cedula", textBox2.Text);
+            cmdl.Parameters.AddWithValue("@EspecialidadID", textBox3.Text);
 
             cmdl.ExecuteNonQuery();
 
             MessageBox.Show("Los datos fueron agregados exitosamente");
             dataGridView1.DataSource = llenar_Grid();
         }
+
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             try
@@ -59,31 +59,29 @@ namespace CshaepBDD
                 textBox1.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
                 textBox2.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
                 textBox3.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
-                textBox4.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
-                textBox5.Text = ((DateTime)dataGridView1.CurrentRow.Cells[4].Value).ToString("yyyy-MM-dd");
             }
             catch
             {
 
             }
         }
+        private void Label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void button2_Click(object sender, EventArgs e)
         {
-            EditarPaciente frm2 = new EditarPaciente(textBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text, textBox5.Text);
+            EditarDoctores frm2 = new EditarDoctores(textBox1.Text, textBox2.Text, textBox3.Text);
             frm2.ShowDialog();
             dataGridView1.DataSource = llenar_Grid();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            EliminarPaciente fmr3 = new EliminarPaciente(textBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text, textBox5.Text);
+            EliminarDoctor fmr3 = new EliminarDoctor(textBox1.Text, textBox2.Text, textBox3.Text);
             fmr3.ShowDialog();
             dataGridView1.DataSource = llenar_Grid();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

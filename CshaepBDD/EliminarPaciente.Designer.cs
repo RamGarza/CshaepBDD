@@ -61,6 +61,7 @@
             this.label2.Size = new System.Drawing.Size(35, 13);
             this.label2.TabIndex = 1;
             this.label2.Text = "label2";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -90,6 +91,7 @@
             this.label5.Size = new System.Drawing.Size(35, 13);
             this.label5.TabIndex = 5;
             this.label5.Text = "label5";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label6
             // 
@@ -99,6 +101,7 @@
             this.label6.Size = new System.Drawing.Size(55, 13);
             this.label6.TabIndex = 4;
             this.label6.Text = "Apellidos :";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label7
             // 
@@ -164,6 +167,7 @@
             this.label11.Size = new System.Drawing.Size(143, 13);
             this.label11.TabIndex = 12;
             this.label11.Text = "¿Desea eliminar el paciente?";
+            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // EliminarPaciente
             // 

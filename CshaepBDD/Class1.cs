@@ -11,7 +11,7 @@ namespace CshaepBDD
     {
         public static SqlConnection Conectar()
         {
-            SqlConnection con = new SqlConnection("SERVER=DESKTOP-7MNTAP9;DATABASE=Consultorio;integrated security=true;");
+            SqlConnection con = new SqlConnection("SERVER=DESKTOP-9CI765R;DATABASE=Consultorio;integrated security=true;");
             con.Open();
             return con;
         }

@@ -16,7 +16,7 @@ namespace CshaepBDD
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MenuPacientes());
+            Application.Run(new menuprincipal());
         }
     }
 }
