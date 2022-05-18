@@ -14,9 +14,6 @@ namespace CshaepBDD
             SqlConnection con = new SqlConnection("SERVER=.;DATABASE=Northwind;integrated security=true;");
             con.Open();
             return con;
-
         }
-
-        
     }
 }
