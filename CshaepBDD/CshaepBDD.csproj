@@ -56,6 +56,78 @@
     <Compile Include="EliminarPaciente.Designer.cs">
       <DependentUpon>EliminarPaciente.cs</DependentUpon>
     </Compile>
+    <Compile Include="MenuOrdenCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuOrdenCompra.Designer.cs">
+      <DependentUpon>MenuOrdenCompra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuReporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuReporte.Designer.cs">
+      <DependentUpon>MenuReporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuPuestos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuPuestos.Designer.cs">
+      <DependentUpon>MenuPuestos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuProveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuProveedores.Designer.cs">
+      <DependentUpon>MenuProveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuPago.Designer.cs">
+      <DependentUpon>MenuPago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuMedicamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuMedicamentos.Designer.cs">
+      <DependentUpon>MenuMedicamentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuInventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuInventario.Designer.cs">
+      <DependentUpon>MenuInventario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuEmpleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuEmpleados.Designer.cs">
+      <DependentUpon>MenuEmpleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuCitas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuCitas.Designer.cs">
+      <DependentUpon>MenuCitas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuAdeudos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuAdeudos.Designer.cs">
+      <DependentUpon>MenuAdeudos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuDoctores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuDoctores.Designer.cs">
+      <DependentUpon>MenuDoctores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menuprincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menuprincipal.Designer.cs">
+      <DependentUpon>menuprincipal.cs</DependentUpon>
+    </Compile>
     <Compile Include="MenuPacientes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,11 +145,47 @@
     <EmbeddedResource Include="EliminarPaciente.resx">
       <DependentUpon>EliminarPaciente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MenuOrdenCompra.resx">
+      <DependentUpon>MenuOrdenCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuPago.resx">
+      <DependentUpon>MenuPago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuMedicamentos.resx">
+      <DependentUpon>MenuMedicamentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuInventario.resx">
+      <DependentUpon>MenuInventario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuEmpleados.resx">
+      <DependentUpon>MenuEmpleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuCitas.resx">
+      <DependentUpon>MenuCitas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuAdeudos.resx">
+      <DependentUpon>MenuAdeudos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuDoctores.resx">
+      <DependentUpon>MenuDoctores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menuprincipal.resx">
+      <DependentUpon>menuprincipal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MenuPacientes.resx">
       <DependentUpon>MenuPacientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EditarPaciente.resx">
       <DependentUpon>EditarPaciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuProveedores.resx">
+      <DependentUpon>MenuProveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuPuestos.resx">
+      <DependentUpon>MenuPuestos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuReporte.resx">
+      <DependentUpon>MenuReporte.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -23,7 +23,6 @@ namespace CshaepBDD
         private void Form1_Load(object sender, EventArgs e)
         {
             Class1.Conectar();
-            MessageBox.Show("Conexion exitosa");
         }
         public DataTable llenar_Grid()
         {
@@ -80,6 +79,11 @@ namespace CshaepBDD
             EliminarPaciente fmr3 = new EliminarPaciente(textBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text, textBox5.Text);
             fmr3.ShowDialog();
             dataGridView1.DataSource = llenar_Grid();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
