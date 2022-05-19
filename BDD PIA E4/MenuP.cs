@@ -67,7 +67,7 @@ namespace BDD_PIA_E4
         #region Desplegar sub menus
         private void btnCitas_Click(object sender, EventArgs e)
         {
-            MostrarSubMenu(panelCitasSub);
+            
         }
 
         private void btnPac_Click(object sender, EventArgs e)
@@ -112,6 +112,26 @@ namespace BDD_PIA_E4
         private void btnAgregarC_Click(object sender, EventArgs e)
         {
             Mostrarform(new PruebaDiseno());
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Mostrarform(new InventariosCatalogo());
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            Mostrarform(new Proveedores());
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            Mostrarform(new OrdenCompra());
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            Mostrarform(new Inventario());
         }
     }
 }
