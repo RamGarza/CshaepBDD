@@ -53,14 +53,62 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Inventarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventarios.Designer.cs">
+      <DependentUpon>Inventarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuCitas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuCitas.Designer.cs">
+      <DependentUpon>MenuCitas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuDoctores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuDoctores.Designer.cs">
+      <DependentUpon>MenuDoctores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuEmpleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuEmpleados.Designer.cs">
+      <DependentUpon>MenuEmpleados.cs</DependentUpon>
+    </Compile>
     <Compile Include="MenuP.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MenuP.Designer.cs">
       <DependentUpon>MenuP.cs</DependentUpon>
     </Compile>
+    <Compile Include="MenuPacientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuPacientes.Designer.cs">
+      <DependentUpon>MenuPacientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuReporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuReporte.Designer.cs">
+      <DependentUpon>MenuReporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrdenCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrdenCompra.Designer.cs">
+      <DependentUpon>OrdenCompra.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Proveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proveedores.Designer.cs">
+      <DependentUpon>Proveedores.cs</DependentUpon>
+    </Compile>
     <Compile Include="PruebaDiseno.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,8 +118,29 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Inventarios.resx">
+      <DependentUpon>Inventarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuCitas.resx">
+      <DependentUpon>MenuCitas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuDoctores.resx">
+      <DependentUpon>MenuDoctores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuEmpleados.resx">
+      <DependentUpon>MenuEmpleados.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MenuP.resx">
       <DependentUpon>MenuP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuPacientes.resx">
+      <DependentUpon>MenuPacientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuReporte.resx">
+      <DependentUpon>MenuReporte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdenCompra.resx">
+      <DependentUpon>OrdenCompra.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -82,6 +151,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Proveedores.resx">
+      <DependentUpon>Proveedores.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PruebaDiseno.resx">
       <DependentUpon>PruebaDiseno.cs</DependentUpon>
     </EmbeddedResource>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CshaepBDD;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -111,7 +112,37 @@ namespace BDD_PIA_E4
 
         private void btnAgregarC_Click(object sender, EventArgs e)
         {
-            Mostrarform(new PruebaDiseno());
+            Mostrarform(new MenuCitas());
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Mostrarform(new InventariosCatalogo());
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            Mostrarform(new Proveedores());
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Mostrarform(new MenuDoctores());
+        }
+
+        private void otrosBtn_Click(object sender, EventArgs e)
+        {
+            Mostrarform(new MenuEmpleados());
+        }
+
+        private void btnAgregarP_Click(object sender, EventArgs e)
+        {
+            Mostrarform(new MenuPacientes());
+        }
+
+        private void reportesBtn_Click(object sender, EventArgs e)
+        {
+            Mostrarform(new MenuReporte());
         }
     }
 }
