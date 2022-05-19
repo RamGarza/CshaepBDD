@@ -103,7 +103,7 @@ namespace BDD_PIA_E4
             {
                 Conexion.Conectar();
                 DataTable dt = new DataTable();
-                string buscar = "select * FROM Proveedores WHERE Nombre LIKE '@Prov%' ";
+                string buscar = "select * FROM Proveedores WHERE Nombre LIKE @Prov+'%' ";
                 SqlCommand cmdl = new SqlCommand(buscar, Conexion.Conectar());
                 cmdl.Parameters.AddWithValue("@Prov", txtBuscar.Text);
                 cmdl.ExecuteNonQuery();

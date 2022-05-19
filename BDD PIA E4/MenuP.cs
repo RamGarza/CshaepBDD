@@ -13,9 +13,11 @@ namespace BDD_PIA_E4
     public partial class MenuP : Form
     {
         int Acceso;
-        public MenuP(int NivelAcceso)
+        long Empleado;
+        public MenuP(int NivelAcceso, long UsuarioID)
         {
             Acceso = NivelAcceso;
+            Empleado = UsuarioID;
             InitializeComponent();
         }
 
