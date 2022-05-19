@@ -13,7 +13,7 @@ namespace BDD_PIA_E4
         public static SqlConnection Conectar()
         {
 
-            SqlConnection con = new SqlConnection("SERVER=.;DATABASE=Consultorio;integrated security=true;");
+            SqlConnection con = new SqlConnection("SERVER=DESKTOP-9CI765R;DATABASE=Consultorio;integrated security=true;");
             con.Open();
             return con;
 

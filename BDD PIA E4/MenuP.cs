@@ -144,5 +144,30 @@ namespace BDD_PIA_E4
         {
             Mostrarform(new MenuReporte());
         }
+
+        private void btnModificarC_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnModificarP_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnEliminarP_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnEliminarC_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

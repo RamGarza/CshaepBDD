@@ -42,5 +42,10 @@ namespace BDD_PIA_E4
             else
                 MessageBox.Show("No se pudo iniciar sesion correctamente");
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
