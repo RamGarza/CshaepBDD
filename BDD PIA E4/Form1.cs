@@ -29,34 +29,18 @@ namespace BDD_PIA_E4
             cmd.Parameters.AddWithValue("@Password", txtPass.Text);
 
             int Acceso = (int)cmd.ExecuteScalar();
-            SqlCommand cmd2 = new SqlCommand("Select Empleado_id from Acceso_Empleado Where Usuario = @Usuario AND Pass = @Password", Conexion.Conectar());
-            cmd2.Parameters.AddWithValue("@Usuario", txtUsr.Text);
-            cmd2.Parameters.AddWithValue("@Password", txtPass.Text);
-
-            long UsuarioID = (long)cmd2.ExecuteScalar();
 
             MessageBox.Show("El valor de la variable existe es: " + Acceso);
-            MessageBox.Show("El valor de la variabl ID Usuario es: " + UsuarioID);
 
             if (Acceso == 5 || Acceso == 1)
             {
                 MessageBox.Show("Se ha iniciado sesion correctamente");
-                MenuP Men = new MenuP(Acceso,UsuarioID); 
+                MenuP Men = new MenuP(Acceso);
                 this.Hide();
                 Men.Show();
             }
             else
                 MessageBox.Show("No se pudo iniciar sesion correctamente");
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

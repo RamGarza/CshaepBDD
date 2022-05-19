@@ -91,7 +91,6 @@ namespace BDD_PIA_E4
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(296, 45);
             this.panel1.TabIndex = 5;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // Form1
             // 
@@ -108,7 +107,6 @@ namespace BDD_PIA_E4
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "Form1";
             this.Text = "Iniciar Sesion";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

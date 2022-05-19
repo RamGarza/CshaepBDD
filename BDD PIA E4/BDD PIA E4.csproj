@@ -46,36 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AdeudoInsumos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AdeudoInsumos.Designer.cs">
-      <DependentUpon>AdeudoInsumos.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CitasRecepcion.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CitasRecepcion.Designer.cs">
-      <DependentUpon>CitasRecepcion.cs</DependentUpon>
-    </Compile>
     <Compile Include="Conexion.cs" />
-    <Compile Include="DetalleOrdenCompra.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DetalleOrdenCompra.Designer.cs">
-      <DependentUpon>DetalleOrdenCompra.cs</DependentUpon>
-    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="InsumoProveedor.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="InsumoProveedor.Designer.cs">
-      <DependentUpon>InsumoProveedor.cs</DependentUpon>
     </Compile>
     <Compile Include="Inventario.cs">
       <SubType>Form</SubType>
@@ -89,53 +65,17 @@
     <Compile Include="Inventarios.Designer.cs">
       <DependentUpon>Inventarios.cs</DependentUpon>
     </Compile>
-    <Compile Include="MenuDoctores.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MenuDoctores.Designer.cs">
-      <DependentUpon>MenuDoctores.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MenuEmpleados.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MenuEmpleados.Designer.cs">
-      <DependentUpon>MenuEmpleados.cs</DependentUpon>
-    </Compile>
     <Compile Include="MenuP.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MenuP.Designer.cs">
       <DependentUpon>MenuP.cs</DependentUpon>
     </Compile>
-    <Compile Include="MenuPacientes.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MenuPacientes.Designer.cs">
-      <DependentUpon>MenuPacientes.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MenuReporte.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MenuReporte.Designer.cs">
-      <DependentUpon>MenuReporte.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ModalConfirmar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ModalConfirmar.Designer.cs">
-      <DependentUpon>ModalConfirmar.cs</DependentUpon>
-    </Compile>
     <Compile Include="OrdenCompra.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="OrdenCompra.Designer.cs">
       <DependentUpon>OrdenCompra.cs</DependentUpon>
-    </Compile>
-    <Compile Include="OrdenDetalle.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="OrdenDetalle.Designer.cs">
-      <DependentUpon>OrdenDetalle.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -151,20 +91,8 @@
     <Compile Include="PruebaDiseno.Designer.cs">
       <DependentUpon>PruebaDiseno.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AdeudoInsumos.resx">
-      <DependentUpon>AdeudoInsumos.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CitasRecepcion.resx">
-      <DependentUpon>CitasRecepcion.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DetalleOrdenCompra.resx">
-      <DependentUpon>DetalleOrdenCompra.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="InsumoProveedor.resx">
-      <DependentUpon>InsumoProveedor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Inventario.resx">
       <DependentUpon>Inventario.cs</DependentUpon>
@@ -172,23 +100,8 @@
     <EmbeddedResource Include="Inventarios.resx">
       <DependentUpon>Inventarios.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuDoctores.resx">
-      <DependentUpon>MenuDoctores.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MenuEmpleados.resx">
-      <DependentUpon>MenuEmpleados.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="MenuP.resx">
       <DependentUpon>MenuP.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MenuPacientes.resx">
-      <DependentUpon>MenuPacientes.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MenuReporte.resx">
-      <DependentUpon>MenuReporte.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ModalConfirmar.resx">
-      <DependentUpon>ModalConfirmar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OrdenCompra.resx">
       <DependentUpon>OrdenCompra.cs</DependentUpon>
