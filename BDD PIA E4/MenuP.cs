@@ -7,15 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CshaepBDD;
+using Consultas;
+using FaltanteInventarios;
 
 namespace BDD_PIA_E4
 {
     public partial class MenuP : Form
     {
         int Acceso;
-        public MenuP(int NivelAcceso)
+        long Empleado;
+        public MenuP(int NivelAcceso, long UsuarioID)
         {
             Acceso = NivelAcceso;
+            Empleado = UsuarioID;
             InitializeComponent();
         }
 
@@ -67,7 +72,7 @@ namespace BDD_PIA_E4
         #region Desplegar sub menus
         private void btnCitas_Click(object sender, EventArgs e)
         {
-            
+            MostrarSubMenu(panelCitasSub);
         }
 
         private void btnPac_Click(object sender, EventArgs e)
@@ -132,6 +137,51 @@ namespace BDD_PIA_E4
         private void button10_Click(object sender, EventArgs e)
         {
             Mostrarform(new Inventario());
+        }
+
+        private void panelForms_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Mostrarform(new MenuDoctores());
+        }
+
+        private void btnAgregarP_Click(object sender, EventArgs e)
+        {
+            Mostrarform(new MenuPacientes());
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button21_Click(object sender, EventArgs e)
+        {
+            Mostrarform(new MenuEmpleados());
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            Mostrarform(new CitasRecepcion(Empleado));
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            Mostrarform(new InsumoProveedor());
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            Mostrarform(new DetalleOrdenCompra());
+        }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+            Mostrarform(new AdeudoInsumos());
         }
     }
 }
